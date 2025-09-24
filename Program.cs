@@ -11,7 +11,7 @@ namespace Calculadora
         static void Main(string[] args)
         {
             Console.WriteLine("Bienvenido a la Calculadora");
-            Console.WriteLine("Interfaz ICalculadora y clase abstracta Operacion creadas exitosamente");
+            Console.WriteLine("Operaciones básicas Suma y Resta implementadas");
             Console.WriteLine("Presione cualquier tecla para salir...");
             Console.ReadKey();
         }
