@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculadora.Interfaces
 {
-    public interface ICalculadora
+    interface ICalculadora
     {
         float Calcular(float operando1, float operando2);
         string GetSimbolo();

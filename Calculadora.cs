@@ -4,21 +4,21 @@ using Calculadora.Interfaces;
 
 namespace Calculadora.Clases
 {
-    public class Calculadora
+    class Calculadora
     {
         private List<ICalculadora> operaciones;
 
-        public Calculadora()
+        internal Calculadora()
         {
             operaciones = new List<ICalculadora>();
         }
 
-        public void AgregarOperacion(ICalculadora operacion)
+        internal void AgregarOperacion(ICalculadora operacion)
         {
             operaciones.Add(operacion);
         }
 
-        public void MostrarMenu()
+        private void MostrarMenu()
         {
             Console.WriteLine("\n=== CALCULADORA ===");
             Console.WriteLine("Seleccione una operación:");
@@ -30,7 +30,7 @@ namespace Calculadora.Clases
             Console.Write("Opción: ");
         }
 
-        public void Ejecutar()
+        internal void Ejecutar()
         {
             bool continuar = true;
 

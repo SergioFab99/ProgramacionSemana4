@@ -7,13 +7,13 @@ using Calculadora.Interfaces;
 
 namespace Calculadora.Clases
 {
-    public class Modulo : Operacion
+    class Modulo : Operacion
     {
-        public Modulo(float op1, float op2) : base(op1, op2)
+        internal Modulo(float op1, float op2) : base(op1, op2)
         {
         }
 
-        public override float Calcular(float operando1, float operando2)
+        protected override float Calcular(float operando1, float operando2)
         {
             if (operando2 == 0)
             {
@@ -22,7 +22,7 @@ namespace Calculadora.Clases
             return operando1 % operando2;
         }
 
-        public override string GetSimbolo()
+        protected override string GetSimbolo()
         {
             return "%";
         }
